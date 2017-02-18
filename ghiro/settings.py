@@ -140,6 +140,9 @@ except NameError:
 #
 
 # Create log dir.
+LOG_DIR =  os.path.join(os.getcwd(), 'tmp')
+LOG_PROCESSING_NAME = 'log-proc-name'
+LOG_PROCESSING_SIZE = 1024*1024*16 # 16 megabytes
 if not os.path.exists(LOG_DIR):
     os.mkdir(LOG_DIR)
 
